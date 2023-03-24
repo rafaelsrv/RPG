@@ -61,7 +61,7 @@ export const useCharacter = ()=>{
         moveRight,
         moveDown,
         moveUp
-    }//Setando movimentos!!!!!k
+    }//Setando movimentos!!!!!kç
 
 
 }
