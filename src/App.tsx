@@ -30,7 +30,7 @@ export const App = ()=>{
 
       case 'KeyS':
       case 'ArrowDown':
-        char.moveDown();
+        char.moveDown(); //Movimento
       break;
     }
     
