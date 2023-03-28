@@ -6,6 +6,7 @@ import { useCharacter } from './hooks/useCharacter'
 
 export const App = ()=>{
   const char = useCharacter();
+  const char2 = useCharacter();
 
   useEffect(()=>{
     window.addEventListener('keydown', handleKeyDown);
@@ -40,6 +41,11 @@ export const App = ()=>{
     <C.Container>
       <C.Map>
         <Character x={char.x} y={char.y} side={char.side}/>
+        <Character x={char2.x} y={char2.y} side={char2.side}/>
+        <button onClick={()=>char2.moveLeft()}>Left</button>
+        <button onClick={()=>char2.moveDown()}>Down</button>
+        <button onClick={()=>char2.moveUp()}>Up</button>
+        <button onClick={()=>char2.moveRight()}>Hight</button>
       </C.Map>
     </C.Container>
 
