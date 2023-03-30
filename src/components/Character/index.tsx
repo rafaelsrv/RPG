@@ -24,7 +24,7 @@ export const Character = ( {x, y, side, name} : Props) =>{
             top={y * size}
             sidePos={sides[side] ?? 0}
         >
-            <C.NameBox>{name}</C.NameBox>
+            <C.NameBox >{name}</C.NameBox>
         </C.Container>
     )
 }
