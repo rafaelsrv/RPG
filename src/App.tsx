@@ -7,7 +7,8 @@ import { useCharacter } from './hooks/useCharacter'
 
 
 export const App = ()=>{
-  const char = useCharacter('Rafael');
+  const char = useCharacter('Rafael', {x:3, y:5});
+  const char2 = useCharacter('RARIRAIRA', {x:4, y:7});
   
 
   useEffect(()=>{
