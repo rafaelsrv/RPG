@@ -1,4 +1,4 @@
-import {} from 'react';
+
 import * as C from './App.styles'
 import { useEffect } from 'react';
 import { Character } from './components/Character'
@@ -7,8 +7,8 @@ import { useCharacter } from './hooks/useCharacter'
 
 
 export const App = ()=>{
-  const char = useCharacter('Rafael', {x:3, y:5});
-  const char2 = useCharacter('RARIRAIRA', {x:4, y:7});
+  const char = useCharacter({propName:'ras', coord:{x:2, y:7}});
+  const char2 = useCharacter({propName:'fgdgfd', coord:{x:3, y:7}});
   
 
   useEffect(()=>{
@@ -44,6 +44,7 @@ export const App = ()=>{
     <C.Container>
       <C.Map>
         <Character x={char.x} y={char.y} side={char.side} name={char.name}/>
+        <Character x={char2.x} y={char2.y} side={char2.side} name={char2.name}/>
         
       </C.Map>
     </C.Container>
