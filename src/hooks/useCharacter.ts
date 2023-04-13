@@ -20,7 +20,7 @@ export const useCharacter = ( {propName, coord} : UseCharacterProps)=>{
 
     let {x, y} = coord
     
-    console.log(coord)
+    
  
     
     const moveLeft = () =>{
