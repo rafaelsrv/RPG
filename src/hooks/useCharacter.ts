@@ -8,7 +8,7 @@ type UseCharacterProps = {
     coord: {
     x: number,
     y: number}
-    } // Props novo char...!!d
+    } // Props novo char...!!dl
 
 export const useCharacter = ( {propName, coord} : UseCharacterProps)=>{
     
